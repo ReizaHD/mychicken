@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RiwayatActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/bold">
+        <TextView
+            android:id="@+id/noNota"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="No Nota"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/totalBiaya"
+            android:layout_toRightOf="@id/noNota"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Total Biaya"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/pembayaran"
+            android:layout_toRightOf="@id/totalBiaya"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Pembayaran"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tgl"
+            android:layout_toRightOf="@id/pembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Tanggal"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

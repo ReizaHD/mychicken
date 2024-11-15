@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity"
+
+	android:background="#99FFFFFF"
+    android:theme="@style/checkout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keranjang Belanja"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@drawable/border1"
+            android:padding="5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/nmMenu"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/jmlHrgMenu"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border1"
+                android:gravity="center"
+                android:text="Nama Menu" />
+            <TextView
+                android:id="@+id/hrgMenu"
+                android:layout_toRightOf="@+id/nmMenu"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/jmlHrgMenu"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border1"
+                android:gravity="center"
+                android:text="Harga"/>
+            <TextView
+                android:id="@+id/jmlMenu"
+                android:layout_toRightOf="@+id/hrgMenu"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/jmlHrgMenu"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border1"
+                android:gravity="center"
+                android:text="Jumlah"/>
+            <TextView
+                android:id="@+id/jmlHrgMenu"
+                android:layout_toRightOf="@+id/jmlMenu"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border1"
+                android:gravity="center"
+                android:text="Jml Harga"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recViewCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border1"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_TotalHarga"
+                    android:text="Total Harga Menu : "
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"/>
+
+                <TextView
+                    android:id="@+id/total_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.100.000"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/text_TotalHarga"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ongkir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:layout_below="@+id/harga"
+                android:background="@drawable/border1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Province : "
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etFromProvince"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shape_rectangle_line_primary"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="City :"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etFromCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shape_rectangle_line_primary"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="To"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Province : "
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etToProvince"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shape_rectangle_line_primary"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="City :"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etToCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shape_rectangle_line_primary"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Weight (gram)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_rectangle_line_primary"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Courier"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etCourier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_rectangle_line_primary"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:padding="12dp" />
+
+                <Button
+                    android:id="@+id/btnProcess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shape_rectangle_primary"
+                    android:text="Process"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Note : This apps use API Raja Ongkir Free Account"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clear"
+                android:layout_below="@id/ongkir"
+                android:text="Kosongkan Keranjang"
+                android:onClick="clear"/>
+            <RelativeLayout
+                android:id="@+id/totalBiayaRel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clear"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_TotalBiaya"
+                    android:text="Total Biaya : "
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"/>
+
+                <TextView
+                    android:id="@+id/totalBiaya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/text_TotalBiaya"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/border1"
+                android:padding="5dp"
+                android:id="@+id/RelPembayaran"
+                android:layout_below="@id/totalBiayaRel">
+                <TextView
+                    android:id="@+id/txt_rp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/pembayaran"
+                    android:text="Rp "
+                    android:textSize="20sp"/>
+                <EditText
+                    android:id="@+id/pembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txt_rp"
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:hint="Total Pembayaran"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bayarBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RelPembayaran"
+                android:layout_alignParentRight="true"
+                android:text="bayar"/>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bayarBtn"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/border1"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/textKembali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali : "
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/kembali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/textKembali"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

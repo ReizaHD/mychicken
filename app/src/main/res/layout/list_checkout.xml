@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/checkout">
+    <TextView
+        android:id="@+id/nmMenu"
+        android:layout_alignParentTop="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border1"
+        android:gravity="center"
+        android:text="Nama Menu" />
+    <TextView
+        android:id="@+id/hrgMenu"
+        android:layout_toRightOf="@+id/nmMenu"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/nmMenu"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border1"
+        android:gravity="center"
+        android:text="Harga"/>
+    <TextView
+        android:id="@+id/jmlMenu"
+        android:layout_toRightOf="@+id/hrgMenu"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/nmMenu"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border1"
+        android:gravity="center"
+        android:text="Jumlah"/>
+    <TextView
+        android:id="@+id/jmlHrgMenu"
+        android:layout_toRightOf="@+id/jmlMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/nmMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border1"
+        android:gravity="center"
+        android:text="Jml Harga"/>
+</RelativeLayout>

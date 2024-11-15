@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyChicken</string>
+    <string name="ayam_grg_inf">Ayam Goreng\nAyam potong yang dibumbui dengan bumbu dan rempah pilihan dan dimasak di dalam minyak goreng.</string>
+    <string name="ayam_bkr_inf">Ayam Bakar\nAyam potong dibumbui dengan kecap dan berbagai rempah dan dibakar langsung diatas api.</string>
+    <string name="ayam_mtg_inf">Ayam Saus Mentega\nAyam yang ditumis dengan berbagai macam bumbu dan dengan tampilan yang menggugah selera.</string>
+    <string name="nasi_inf">Nasi Putih\nSepiring nasi putih, kurang pas rasanya jika makan ayam tana disertai nasi.</string>
+    <string name="air_inf">Air Mineral\nAir mineral botol dengan isi 600ml.</string>
+    <string name="teh_inf">Teh Manis\n Teh, minuman yang sangat cocok setelah makan apa saja.</string>
+</resources>

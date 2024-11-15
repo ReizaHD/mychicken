@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/urlText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnConfirm"
+        android:textSize="18sp"
+        android:text="Masukkan URL"/>
+    <EditText
+        android:id="@+id/urlForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urlText"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_input"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:hint="URL"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urlForm"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_button"
+        android:text="CONFIRM"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

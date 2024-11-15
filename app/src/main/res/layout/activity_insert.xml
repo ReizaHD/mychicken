@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertDataActivity"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/kd_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#8E8D8D"
+        android:editable="true"
+        android:hint="Kode Menu"/>
+    <EditText
+        android:id="@+id/nm_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:layout_marginHorizontal="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#8E8D8D"
+        android:hint="Nama Menu"/>
+    <EditText
+        android:id="@+id/hrg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#8E8D8D"
+        android:hint="Harga Menu"/>
+    <!--<EditText
+        android:id="@+id/gbr_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#8E8D8D"
+        android:hint="Gambar Menu"/>-->
+    <EditText
+        android:id="@+id/ket_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#8E8D8D"
+        android:hint="Keterangan"/>
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="INSERT"/>
+
+</LinearLayout>
