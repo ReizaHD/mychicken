@@ -1,2 +1,2 @@
 # MyChicken
-Sistem Penjualan Online
+Aplikasi Penjualan Online berbasis Android
